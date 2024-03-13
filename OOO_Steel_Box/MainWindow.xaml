@@ -1,0 +1,56 @@
+﻿<Window x:Class="OOO_Steel_Box.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOO_Steel_Box"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid Background="#FFC5E2D4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="37*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="\Resources\komp.png" Width="80" Height="80"/>
+            <TextBlock Grid.Column="1" Text="Авторизация" Margin="138,26,138,32" FontFamily="Angry" FontSize="24" RenderTransformOrigin="0.243,0.511"/>
+            <Button Grid.Column="2" x:Name="Exit" Content="Выход" Click="Exit_Click" Margin="10,15" Background="#FF39C7DA"  Width="200" Height="50" FontFamily="Accuratist" FontSize="16"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMTMtYWstNTEyMy1zcy0wMi5qcGc.png" Opacity="0.79"/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Логин" Margin="0,34,194,6" HorizontalAlignment="Right" FontFamily="Accuratist" FontSize="14" />
+            <TextBox Grid.Row="1" Margin="245,30,245,0" x:Name="Login" FontSize="24" Grid.ColumnSpan="2"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Пароль" Margin="0,43,194,0" HorizontalAlignment="Right" VerticalAlignment="Top" FontFamily="Accuratist" FontSize="14"></TextBlock>
+            <TextBox Grid.Row="2" Margin="244,24,246,6" x:Name="PasswordShow" FontSize="24" Grid.ColumnSpan="2" Visibility="Hidden"/>
+            <PasswordBox Grid.Row="2" Margin="244,24,246,6" x:Name="PasswordDot" FontSize="24" Grid.ColumnSpan="2"/>
+            <CheckBox x:Name="isVisiblePassword" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,44,204,0" Checked="isVisiblePassword_Checked" Unchecked="isVisiblePassword_Unchecked"/>
+            <Button Grid.Row="3" Grid.Column="0" Content="Войти как гость"  Background="#FF39C7DA" x:Name="Gost" Height="50" Click="Gost_Click" Grid.ColumnSpan="2" Margin="244,14,246,10" FontSize="16" FontFamily="Accuratist"/>
+            <Button Grid.Row="4" Content="Авторизация" Background="#FF39C7DA" x:Name="Start" Click="Start_Click" Height="50" Grid.ColumnSpan="2" Margin="245,7,246,16" FontFamily="Accuratist" FontSize="16"/>
+
+        </Grid>
+    </Grid>
+</Window>

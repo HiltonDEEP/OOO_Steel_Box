@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOO_Steel_Box", "OOO_Steel_Box\OOO_Steel_Box.csproj", "{5BAB2A8A-757D-43EE-8F5C-B1969E974393}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{13021577-9F5F-4B03-8961-236A2B4D094A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BAB2A8A-757D-43EE-8F5C-B1969E974393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BAB2A8A-757D-43EE-8F5C-B1969E974393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BAB2A8A-757D-43EE-8F5C-B1969E974393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BAB2A8A-757D-43EE-8F5C-B1969E974393}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13021577-9F5F-4B03-8961-236A2B4D094A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13021577-9F5F-4B03-8961-236A2B4D094A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13021577-9F5F-4B03-8961-236A2B4D094A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13021577-9F5F-4B03-8961-236A2B4D094A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33053567-5C95-4F64-A9D1-BDA9281B254B}
+	EndGlobalSection
+EndGlobal

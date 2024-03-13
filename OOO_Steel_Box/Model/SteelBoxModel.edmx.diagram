@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5bee9110d7774309a65481914083069e" Name="Diagram1">
+        <EntityTypeShape EntityType="SteelBoxDBModel.Coolers" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteelBoxDBModel.Frames" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteelBoxDBModel.HardDrives" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteelBoxDBModel.Motherboards" Width="1.5" PointX="0.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteelBoxDBModel.Orders" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteelBoxDBModel.OrderStatuses" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteelBoxDBModel.PCBuilds" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteelBoxDBModel.PowerUnits" Width="1.5" PointX="0.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteelBoxDBModel.Processors" Width="1.5" PointX="0.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteelBoxDBModel.SolidStateDrivers" Width="1.5" PointX="0.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteelBoxDBModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteelBoxDBModel.UserRoles" Width="1.5" PointX="0.75" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteelBoxDBModel.Users" Width="1.5" PointX="3" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteelBoxDBModel.Videocards" Width="1.5" PointX="0.75" PointY="20.25" IsExpanded="true" />
+        <AssociationConnector Association="SteelBoxDBModel.FK_PCBuilds_Coolers" ManuallyRouted="false" />
+        <AssociationConnector Association="SteelBoxDBModel.FK_PCBuilds_Frames" ManuallyRouted="false" />
+        <AssociationConnector Association="SteelBoxDBModel.FK_PCBuilds_HardDrives" ManuallyRouted="false" />
+        <AssociationConnector Association="SteelBoxDBModel.FK_PCBuilds_Motherboards" ManuallyRouted="false" />
+        <AssociationConnector Association="SteelBoxDBModel.FK_Orders_OrderStatuses" ManuallyRouted="false" />
+        <AssociationConnector Association="SteelBoxDBModel.FK_Orders_PCBuilds" ManuallyRouted="false" />
+        <AssociationConnector Association="SteelBoxDBModel.FK_Orders_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SteelBoxDBModel.FK_PCBuilds_PowerUnits" ManuallyRouted="false" />
+        <AssociationConnector Association="SteelBoxDBModel.FK_PCBuilds_Processors" ManuallyRouted="false" />
+        <AssociationConnector Association="SteelBoxDBModel.FK_PCBuilds_SolidStateDrivers" ManuallyRouted="false" />
+        <AssociationConnector Association="SteelBoxDBModel.FK_PCBuilds_Videocards" ManuallyRouted="false" />
+        <AssociationConnector Association="SteelBoxDBModel.FK_Users_UserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
