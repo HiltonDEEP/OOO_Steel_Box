@@ -1,4 +1,5 @@
 ﻿using OOO_Steel_Box.Classes;
+using OOO_Steel_Box.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -173,10 +174,28 @@ namespace OOO_Steel_Box
             if(Helper.User.UserRoleID == 1)
             {
                 buttonOrder.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                MessageBox.Show("Вы не имеете права оформлять заказ");
+
+                try
+                {
+                    //Создаём оьъект заказ
+                    Model.Orders Order = new Model.Orders();
+                    PCBuildExtended pCBuildExtendeds = listBoxProducts.SelectedItem as PCBuildExtended;
+                    //Запполняем поля
+                    Order.UserID = Helper.User.UserID;
+                    Order.PCBuildID = pCBuildExtendeds.PCBuilds.PCBuildID;
+                    Order.OrderStatusID = 1;
+                    Order.OrderData = DateTime.Now;
+                    Helper.DB.Orders.Add(Order);
+                    Helper.DB.SaveChanges();
+                    MessageBox.Show("Заказ оформлен");
+                    //listOrder.Clear();
+                    //this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Произошёл сбой при сохранении: {ex.Message}");
+                }
+
             }
         }
 
